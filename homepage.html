@@ -1,0 +1,124 @@
+<html>
+	<title>home</title>
+
+	<style>
+		body{
+			background-color: #E6DFCE;
+		}
+
+		font{
+			font-size: 15pt;
+			font-style: italic;
+		}
+
+        .head{
+			display: flex;
+		}
+
+		.date{
+			font-family: "lato" sans-serif;
+			color: #836338;
+			font-size: 7pt;
+		} 
+
+		.time {
+			position: absolute;
+			right: 10;
+			font-style: italic;
+			color: #836338;
+			font-size: 7pt;
+		}
+
+		hr{
+			size: 7;
+			color: khaki;
+		}
+		section#box {
+			background-size: cover;
+			text-align: center; padding: 100px 0;
+			color: #9B803D;
+		}
+
+		.box1 {
+			margin-bottom: 20px; font-weight: bolder;
+		}
+		header {
+			background-color: rgb(186, 170, 131); color: #BAAA83;
+			padding: 20px;
+		}
+
+		ul {
+			list-style-type: none; margin: 0;
+			padding: 0;
+		}
+
+		li {
+			display: inline;
+ 			margin-right: 20px;
+		}
+
+		a {
+			text-decoration: none; color: #644703;
+		}
+
+</style>
+
+
+<body>
+
+<header>
+<nav>
+	<ul>
+		<li><a href="#about">about</a></li>
+		<li><a href="#services">services</a></li>
+		<li><a href="#contact">contact</a></li>
+	</ul>
+</nav>
+</header>
+
+<!-- html date & time-->
+
+<div class="head">
+	<span class="date"><h1> <span id="date"></span></h1></span>
+	<span class="time"><h1> <span id="time"></span></h1></span>
+</div>
+
+
+<!-- javascript for date&time-->
+<script>
+	function displayDateTime() {
+        var now = new Date();
+        var date = now.toDateString();
+        var time = now.toLocaleTimeString();
+        
+        document.getElementById("date").innerHTML = date;
+        document.getElementById("time").innerHTML = time;
+    }
+    
+    setInterval(displayDateTime, 1000); // Update every second
+</script>
+
+<!--html picture-->
+<center><img src="makeup.jpg" width="420px" height="350px" margin="20 auto" padding="20px"></center>
+
+<hr>
+
+<!--html text explanation-->
+<pre><h1 align="center">make up box</h1></pre>
+<font><center> Women's Fav</center></font>
+
+<section id="box">
+	<div class="box1">
+	<a href="search.html" class="cta-button">SEARCH MAKEUP</a>
+	 
+	</div>
+	
+	<div class="box1">
+	<a href="list.html" class="cta-button">list your top 5 makeup !</a>
+	</div>
+	</section>
+
+</body>
+
+</html>
+

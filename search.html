@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find makeup</title>
+    <style>
+        /* Style the container */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #E6DFCE;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Style the search input and button */
+        #searchMakeup {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #876B28;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown list */
+        #makeupInfo {
+            padding: 10px;
+            border: 1px solid #B9A577;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        /* Style the result container */
+        #info {
+            margin-top: 20px;
+            padding: 50px;
+            background-color: #DDCFB0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #DBC89F;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change button color on hover */
+        a:hover {
+            background-color: #D3B7E7;
+        }
+
+        h2 {
+            color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h2><pre>find makeup</pre></h2>
+    <br>
+
+    <select id="makeupInfo">
+        <option value="anna sui">anna sui</option>
+        <option value="benefit">benefit</option>
+        <option value="c'est moi">c'est moi</option>
+        <option value="clinique">clinique</option>
+        <option value="dior">dior</option>
+        <option value="e.l.f">e.l.f</option>
+        <option value="fenty">fenty</option>
+        <option value="l'oreal">l'oreal</option>
+        <option value="maybelline">maybelline</option>
+        <option value="milani">milani</option>
+        <option value="nyx">nyx</option>
+        <option value="revlon">revlon</option>
+        <option value="wet n wild">wet n wild</option>
+    </select>
+    <button onclick="searchMakeup()">find</button>
+
+    <br>
+    <br><br>
+
+    <a href="homepage.html" class="button-link">back</a>
+
+    <div id="info"></div>
+    
+</body>
+</html>
